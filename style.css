@@ -1,0 +1,63 @@
+
+body {
+	background: url(background.png);
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	color:#3f39ab;
+}
+
+#loginbox{
+	padding:10px;
+	box-shadow:1px 1px 6px #292929; /* CSS3 */
+}
+
+label {
+	display:inline-block;
+    width:80pt;
+}
+
+fieldset{
+	border-color:#3f39ab;
+}
+
+hr{
+	border-color:#3f39ab;
+	background-color:#3f39ab;
+}
+
+a {
+	color:#7cdbff;
+}
+
+/* This is in register.html*/
+#main-fieldset{
+
+}
+
+/* This is in register.html*/
+.top-level-fieldset{
+	background-color:white;
+	margin-top:5pt;
+}
+
+/* This is in chat.html*/
+.username{
+	float:left;
+	color:#7cdbff;
+	padding:0pt;
+	margin:0pt;
+	display:inline-block;
+    width:100pt;
+}
+
+/* This is in chat.html*/
+.message{
+	color:#3f39ab;
+	padding:0pt;
+	margin:0pt;
+}
+
+/* This is in chat.html*/
+.clear{
+	clear:both;
+}
+

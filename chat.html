@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+    <head>
+        <title>Chat</title>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="style.css" type="text/css"/>
+        <script type="text/javascript">
+	
+	function sendMessage(  ){
+		var msg = document.getElementById("input-text").value;
+		//alert(msg);
+		var history = document.getElementById("history");
+		var name = document.createElement("p");
+		var text = document.createElement("p");
+		var clear = document.createElement("div");
+		name.innerText="Jens Leuschner: ";
+		text.innerText=msg;
+		
+		name.className = "username";
+		text.className = "message";
+		clear.className = "clear";
+			
+		history.appendChild(name);
+		history.appendChild(text);
+		history.appendChild(clear);	
+			
+	}
+</script>
+    </head>
+    <body>
+        <div id="loginbox" style="background-color:white;width:400pt;margin:auto">
+            <img src="logo.png" alt="logo" width="282" heigth="79"/>
+            <p>Um mit anderen zu chatten, schreiben Sie etwas in das Eingabefeld und klicken anschließend auf 
+			Senden.</p>
+            <fieldset style="height:200pt">
+                <legend>Verlauf</legend>
+                <div id="history" style="background-color:white;overflow:scroll;height:185pt;"/>
+            </fieldset>
+            <form method="POST" onSubmit="JavaScript:sendMessage()">
+                <fieldset>
+                    <legend>Eingabe</legend>
+                    <textarea name="text" id="input-text" placeholder="Schreibe etwas ..." style="width:100%;height:100pt;resize: none;" autofocus="true" required="true"/>
+                </fieldset>
+                <input type="submit" value="senden" style="float:right"/>
+            </form>
+            <input type="button" onclick="JavaScript:sendMessage()" value="Testbutton" style="float:right"/>
+            <div class="clea

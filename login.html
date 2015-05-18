@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+    <head>
+        <title>Login</title>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="style.css" type="text/css"/>
+    </head>
+    <body>
+        <div id="loginbox" style="background-color:white;width:400pt;margin:auto">
+            <img src="logo.png" alt="logo" width="282" heigth="79"/>
+            <p>Bitte melden Sie sich mit Ihrem Nutzernamen und dem zugehörigen Passwort an.
+			Sollten Sie noch keinen Account haben, klicken Sie bitte auf 
+			<a href="register.html">Registrieren</a>.</p>
+            <form method="POST" action="login.xq">
+                <fieldset>
+                    <legend>Anmeldung</legend>
+                    <label for="username">Nutzername:</label>
+                    <input type="text" id="username" maxlength="30" placeholder="student@hs-zigr.de"/>
+                    <br/>
+                    <label for="password">Passwort:</label>
+                    <input type="password" id="password" maxlength="30" placeholder="*******"/>
+                    <br/>
+                    <input type="submit" value="anmelden"/>
+                </fieldset>
+            </f

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+    <head>
+        <title>Registrierung</title>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="style.css" type="text/css"/>
+    </head>
+    <body>
+        <div id="loginbox" style="background-color:white;width:400pt;margin:auto">
+            <img src="logo.png" alt="logo" width="282" heigth="79"/>
+            <p>Bitte füllen Sie unten stehendes Formular aus und bestätigen Sie Ihre 
+			Angaben durch den registrieren Schalter. Besitzen Sie bereits einen 
+			Account klicken Sie bitte auf <a href="login.html">anmelden</a>.</p>
+            <form method="POST" action="register.xq">
+                <fieldset id="main-fieldset">
+                    <legend>Persönliche Daten</legend>
+                    <fieldset class="top-level-fieldset">
+                        <legend>Name</legend>
+                        <label for="first-name">Vorname:</label>
+                        <input type="text" id="first-name" maxlength="30" placeholder="Max"/>
+                        <br/>
+                        <label for="second-name">Nachname:</label>
+                        <input type="text" id="second-name" maxlength="30" placeholder="Musterman"/>
+                    </fieldset>
+                    <fieldset class="top-level-fieldset">
+                        <legend>Geschlecht</legend>
+                        <input type="radio" id="man" name="sex" checked="true"/>
+                        <label for="man">männlich</label>
+                        <input type="radio" id="woman" name="sex"/>
+                        <label for="woman">weiblich</label>
+                    </fieldset>
+                    <fieldset class="top-level-fieldset">
+                        <legend>Zugangsdaten</legend>
+                        <label for="username">Nutzername:</label>
+                        <input type="text" id="username" maxlength="30" placeholder="student@hs-zigr.de"/>
+                        <br/>
+                        <label for="password">Passwort:</label>
+                        <input type="password" id="password_1" maxlength="30" placeholder="*******"/>
+                        <br/>
+                        <label for="password">Passwort:</label>
+                        <input type="password" id="password_2" maxlength="30" placeholder="*******"/>
+                    </fieldset>
+                    <input type="submit" value="registrieren"/>
+                </fieldset>
+            </f
