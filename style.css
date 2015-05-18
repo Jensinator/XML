@@ -61,3 +61,23 @@ a {
 	clear:both;
 }
 
+#menu{
+    background-color:red;
+    width:100%;
+    height:100pt;
+}
+
+#mini-calender{
+    float:left;
+    background-color:green;
+    width:30%;
+    height:200pt;
+}
+
+#calender-table{
+    background-color:lightblue;
+    width:70%;
+}
+
+
+
